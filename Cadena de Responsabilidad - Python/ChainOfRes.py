@@ -19,7 +19,7 @@ class ManejadorNomina(Manejador):
 
     def manejador_operacion(self,op):
         if op == 1:
-            print("Liquidando por n髆ina")
+            print("Liquidando por n贸mina")
         else:
             self._sucesor.manejador_operacion(op)
 
@@ -27,7 +27,7 @@ class ManejadorHoraCatedra(Manejador):
 
     def manejador_operacion(self,op):
         if op == 2:
-            print("Liquidando por Hora C醫edra")
+            print("Liquidando por Hora C谩tedra")
         else:
             self._sucesor.manejador_operacion(op)
 
@@ -58,7 +58,7 @@ class ManejadorDocPlanta(Manejador):
 class ManejadorDef(Manejador):
 
     def manejador_operacion(self,op):
-        print("No es una opci髇 v醠ida")
+        print("No es una opci贸n v谩lida")
 
 class Ejemplo:
     
@@ -87,9 +87,9 @@ class Ejemplo:
 
 if __name__ == "__main__":
     print("Ingrese un numero para liquidar un tipo de empleado")
-    print("1)N髆ina\n2)Hora C醫edra\n3)Salario\n4)Honorario\n5)Docente de planta")
+    print("1)N贸mina\n2)Hora C谩tedra\n3)Salario\n4)Honorario\n5)Docente de planta")
 
-    opcion = int(input("Ingrese una opci髇: "))
+    opcion = int(input("Ingrese una opci贸n: "))
     ejemplo = Ejemplo()
     ejemplo.main(opcion)
     
